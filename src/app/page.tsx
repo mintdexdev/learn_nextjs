@@ -1,13 +1,25 @@
-import React from 'react'
+import FeaturedCourses from '@/components/FeaturedCourses'
+import Footer from '@/components/Footer'
+import HeroSection from '@/components/HeroSection'
+import Instructors from '@/components/Instructors'
+import MusicSchoolTestimonials from '@/components/MusicSchoolTestimonials'
+import UpcommingWebinars from '@/components/UpcommingWebinars'
+import WhyChooseUs from '@/components/WhyChooseUs'
 
-const page = () => {
+const Home = () => {
   return (
-    <div>
-      <h1 className="text-center">
-        Mintdexdev
-      </h1>
-    </div>
+    <main id='home-page'>
+
+      <HeroSection />
+      <FeaturedCourses />
+      <WhyChooseUs />
+      <MusicSchoolTestimonials />
+      <UpcommingWebinars />
+      <Instructors />
+      <Footer />
+
+    </main>
   )
 }
 
-export default page
+export default Home
