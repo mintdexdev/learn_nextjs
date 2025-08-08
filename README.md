@@ -16,6 +16,9 @@ npm run dev
 To build and preview:
 ```
 npm run build
+
+
+
 npm run start
 ```
 
@@ -23,6 +26,9 @@ npm run start
 - [Home Page](#home-page)
 - [Course Page](#course-page)
 - [Contact Page](#contact-page)
+
+https://github.com/user-attachments/assets/3e222900-2c04-4125-aebb-a2e92a5fd70b
+
 ## Home Page
 ![Image](projectPreview/home.avif)
 ## Course Page
