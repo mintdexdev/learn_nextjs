@@ -5,6 +5,7 @@ export const API_MESSAGES = {
     ALREADY_EXISTS: "User already exists",
     NOT_EXISTS: "User does not exists",
     NOT_FOUND: "User not found",
+    NOT_SIGNIN: "Use not signed in",
     FOUND: "User found",
   },
   AUTH: {
@@ -15,6 +16,7 @@ export const API_MESSAGES = {
     SIGNOUT: "Signed Out successfully",
   },
   SERVER_ERROR: {
+    ME: "---Internal Server Error during: getting user data---",
     SIGNUP: "---Internal Server Error during: Sign Up---",
     SIGNIN: "---Internal Server Error during: Sign In---",
     SIGNOUT: "---Internal Server Error during: Sign Out---",

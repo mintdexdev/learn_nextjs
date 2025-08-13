@@ -1,8 +1,8 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConfig";
 import { API_MESSAGES } from "@/constants/messages";
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   try {
     await dbConnect()
 

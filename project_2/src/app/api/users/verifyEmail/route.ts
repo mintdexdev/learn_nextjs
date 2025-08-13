@@ -6,14 +6,12 @@ export async function POST(req: NextRequest) {
   await dbConnect()
   try {
     const body = await req.json();
-    console.log(body) // TODO Remove 
     const { token } = body;
 
     const user = await User.findOne({ verifyToken: token, verifyTokenExpiry: { $gt: Date.now() } })
     if (!user) {
-      return NextResponse.json({ message: "Invalid Token" }, { status: 400 });
+      return NextResponse.json({ message: "Email is verified or Invalid Token" }, { status: 400 });
     }
-    console.log(user) // TODO Remove 
 
     user.isVerified = true
     user.verifyToken = undefined
@@ -31,5 +29,4 @@ export async function POST(req: NextRequest) {
     console.error(msg);
     return NextResponse.json({ error: msg }, { status: 500 });
   }
-
 }

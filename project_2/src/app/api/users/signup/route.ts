@@ -33,7 +33,6 @@ export async function POST(req: NextRequest) {
 
     // send verification email
     const emailResponse = await sendEmail({ email, emailType: "VERIFY", userId: savedUser._id.toString() })
-    console.log(emailResponse)
 
     return NextResponse.json({
       message: "User registered successfully",
