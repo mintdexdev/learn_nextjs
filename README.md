@@ -1,4 +1,5 @@
 # Learn Nextjs 
+Learnt about nextjs using this repo
 
 
 To get you the local copy of the repo:
@@ -9,29 +10,25 @@ cd learn_nextjs
 
 To run the develpment server:
 ```
+cd project_name
+&&
 npm i
+&&
 npm run dev
-
 ```
+
 To build and preview:
+
 ```
-npm run build
-
-
-
+npm run build 
+&& 
 npm run start
 ```
 
 ## See preview
-- [Home Page](#home-page)
-- [Course Page](#course-page)
-- [Contact Page](#contact-page)
-  
-https://github.com/user-attachments/assets/2d2deb25-9f7e-4836-a010-7827bc48255a
+- [Project 1](#project-1)
+ 
+## Project 1
+[Open Project](project_1/README.md)
 
-## Home Page
-![Image](projectPreview/home.avif)
-## Course Page
-![Image](projectPreview/courses.avif)
-## Contact Page
-![Image](projectPreview/contact.avif)
+![Image](_images/project_1.avif)
