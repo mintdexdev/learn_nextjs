@@ -2,27 +2,27 @@ import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
   username: {
-    typeof: String,
+    type: String,
     required: [true, "Please provide a username"],
     unique: true,
   },
   email: {
-    typeof: String,
+    type: String,
     required: [true, "Please provide an email"],
     unique: true,
   },
   password: {
-    typeof: String,
+    type: String,
     required: [true, "Please provide a password"],
 
   },
   isVerified: {
-    typeof: Boolean,
-    default: true,
+    type: Boolean,
+    default: false,
   },
   isAdmin: {
-    typeof: Boolean,
-    default: true,
+    type: Boolean,
+    default: false,
   },
   forgotPasswordToken: String,
   forgotPasswordTokenExpiry: Date,

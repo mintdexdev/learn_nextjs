@@ -1,30 +1,23 @@
 import mongoose from 'mongoose'
 
-// const connection: { isConnected?: number } = {};
+const connection: { isConnected?: number } = {};
 
 export default async function dbConnect() {
 
-  // if (connection.isConnected) {
-  //   // console.log('---Database Connection is already estabilished---')
-  //   return;
-  // }
+  // if already connected, skip
+  if (connection.isConnected) {
+    console.log('---DB already Connected---')
+    return;
+  }
 
+  // make new db connection
   try {
-    mongoose.connect(process.env.MONGODB_URI!)
-    const db = mongoose.connection
-
-    db.on('connected', () => {
-      console.log("Database Connected")
-    })
-
-    db.on('error', (error) => {
-      console.error("Database Connection Error", error)
-    })
-
-    process.exit(1);
+    const db = await mongoose.connect(process.env.MONGODB_URI!)
+    connection.isConnected = db.connections[0].readyState
+    console.log('---DB Connection Success---');
 
   } catch (error: any) {
-    console.error("__Internal Server Error__ \n during: Database Connection")
+    console.error("---Error during DB Connection---", error)
     throw new Error(error.message)
   }
 }
