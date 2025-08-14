@@ -26,8 +26,8 @@ npm run start
 https://github.com/user-attachments/assets/3e222900-2c04-4125-aebb-a2e92a5fd70b
 
 ## Home Page
-![Image](projectPreview/root.avif)
+![Image](_previewImages/root.avif)
 ## Course Page
-![Image](projectPreview/courses.avif)
+![Image](_previewImages/courses.avif)
 ## Contact Page
-![Image](projectPreview/contact.avif)
+![Image](_previewImages/contact.avif)
