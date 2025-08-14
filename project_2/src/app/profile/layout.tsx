@@ -1,7 +1,7 @@
 import React from 'react'
 import { Toaster } from 'react-hot-toast'
 
-function Auth({ children }: { children: React.ReactNode }) {
+function ProfileLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className='min-h-screen flex justify-center sm:items-center '>
       <Toaster />
@@ -10,4 +10,4 @@ function Auth({ children }: { children: React.ReactNode }) {
   )
 }
 
-export default Auth
+export default ProfileLayout

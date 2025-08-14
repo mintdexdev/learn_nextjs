@@ -1,11 +1,10 @@
 "use client"
 
-import React, { useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
-import Link from 'next/link'
-import axios, { AxiosError } from 'axios'
-
-import toast from 'react-hot-toast'
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import axios, { AxiosError } from 'axios';
+import toast from 'react-hot-toast';
 
 function SignUp() {
   const router = useRouter()
@@ -22,7 +21,6 @@ function SignUp() {
     try {
       setLoading(true)
       const response = await axios.post(`/api/users/signup`, user)
-      console.log(response, response.data)
       toast.success("Sign Up Success")
       toast.success("Verification Email sent")
       router.push('/signin')

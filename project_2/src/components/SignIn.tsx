@@ -21,7 +21,6 @@ function SignUp() {
     try {
       setLoading(true)
       const response = await axios.post(`/api/users/signin`, user)
-      console.log(response, response.data)
       toast.success("Sign In Success")
       router.push('/profile')
     } catch (error) {

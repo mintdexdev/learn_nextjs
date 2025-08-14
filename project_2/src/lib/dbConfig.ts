@@ -6,7 +6,7 @@ export default async function dbConnect() {
 
   // if already connected, skip
   if (connection.isConnected) {
-    console.log('---DB already Connected---')
+    // console.log('---DB already Connected---')
     return;
   }
 
@@ -14,7 +14,7 @@ export default async function dbConnect() {
   try {
     const db = await mongoose.connect(process.env.MONGODB_URI!)
     connection.isConnected = db.connections[0].readyState
-    console.log('---DB Connection Success---');
+    // console.log('---DB Connection Success---');
 
   } catch (error: any) {
     console.error("---Error during DB Connection---", error)
