@@ -26,9 +26,15 @@ npm run start
 ```
 
 ## See preview
-- [Project 1](#project-1)
+- [Project 1](#project-1): Frontend practice
+- [Project 2](#project-2): Backend practice
  
 ## Project 1
 [Open Project](project_1/README.md)
 
 ![Image](_images/project_1.avif)
+
+## Project 2
+[Open Project](project_2/README.md)
+
+![Image](_images/project_2.avif)
